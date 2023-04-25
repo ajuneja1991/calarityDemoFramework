@@ -10,7 +10,14 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('login', (email, password) => {
+        cy.intercept("https://calarity-s.azurewebsites.net/api/pushNotification/notficationsList").as('calNotapi');
+        cy.get("#tel").clear().type("admin@calarity.com");
+        cy.get("input[placeholder='Password']").clear().type("admin");
+        cy.get("[value='Log In']").click();
+        cy.wait('@calNotapi');
+
+})
 //
 //
 // -- This is a child command --
