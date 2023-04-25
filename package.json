@@ -1,0 +1,28 @@
+{
+  "name": "calaritydemoframework",
+  "version": "2.0.0",
+  "description": "This is demo for harpreet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajuneja1991/calarityDemoFramework.git"
+  },
+  "keywords": [
+    "Cypress",
+    "Calarity",
+    "javaScript",
+    "TDD"
+  ],
+  "dependencies": {
+    "cypress": "12.10.0"
+  },
+  "author": "Aman Juneja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajuneja1991/calarityDemoFramework/issues"
+  },
+  "homepage": "https://github.com/ajuneja1991/calarityDemoFramework#readme"
+}
